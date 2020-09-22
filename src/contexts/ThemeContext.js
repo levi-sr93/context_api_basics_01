@@ -13,11 +13,13 @@ class ThemeContextProvider extends React.Component {
       text: '#fff',
       background: '#5c5c5c'
     }
-  };
+  }; 
 
   render(){
     return (
-
+      <ThemeContext.Provider value={{...this.state}}>
+        {this.props.children}
+      </ThemeContext.Provider>
     )
   }
 }
