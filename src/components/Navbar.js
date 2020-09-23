@@ -7,7 +7,7 @@ class Navbar extends React.Component {
   render() {
     // console.log(this.context)
     const {isDarkTheme, darkTheme, lightTheme} = this.context;
-    const theme =  isDarkTheme ? darkTheme : lightTheme
+    const theme =  isDarkTheme ? darkTheme : lightTheme;
     return (
       <nav className="ui centered header">
         <h2>Levi</h2>
