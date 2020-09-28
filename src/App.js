@@ -6,6 +6,7 @@ import TodoList from './components/TodoList';
 
 import ThemeContextProvider from './contexts/ThemeContext';
 import AuthContextProvider from './contexts/AuthContext';
+import TodoListContextProvider from './contexts/TodoListContext';
 
 
 function App() {
@@ -15,7 +16,9 @@ function App() {
           <AuthContextProvider>
             <ThemeContextProvider>
               <Navbar />
-              <TodoList />
+              <TodoListContextProvider>
+                <TodoList />
+              </TodoListContextProvider>
             </ThemeContextProvider>
           </AuthContextProvider>
       </div>
